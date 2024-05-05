@@ -1,0 +1,12 @@
+server:
+  port: 3000
+elasticsearch:
+  host: "http://localhost"
+  port: 9200
+  index: "product-index"
+productConfigClient:
+  url: "http://localhost:3001"
+redis:
+  host: "localhost"
+  port: 6379
+  eventName: "productConfigCacheInvalidate"
