@@ -12,7 +12,7 @@ if __name__ == '__main__':
             bulk_data += json.dumps({"index": {"_index": "product-index"}}) + "\n"
             bulk_data += json.dumps(sample) + "\n"
 
-        response = requests.post(f"http://localhost:9200/product-index/_bulk",
+        response = requests.post(f"http://elasticsearch:9200/product-index/_bulk",
                                  headers={"Content-Type": "application/json"},
                                  data=bulk_data)
 

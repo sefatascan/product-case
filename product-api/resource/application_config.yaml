@@ -1,12 +1,12 @@
 server:
   port: 3000
 elasticsearch:
-  host: "http://localhost"
+  host: "http://elasticsearch"
   port: 9200
   index: "product-index"
 productConfigClient:
-  url: "http://localhost:3001"
+  url: "http://product-resource-api:3001"
 redis:
-  host: "localhost"
+  host: "redis"
   port: 6379
   eventName: "productConfigCacheInvalidate"
